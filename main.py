@@ -229,7 +229,7 @@ class MainWindow(QMainWindow):
         status_bar = self.statusBar()
         status_bar.setStyleSheet("background-color: #cccccc;")
         self.zoom_label = QLabel("Zoom : 100%")
-        self.cursor_label = QLabel("Ln 0 col 0")
+        self.cursor_label = QLabel("Ln 1 col 1")
 
         separator_1 = QLabel("        ")
         separator_2 = QLabel("        ")
