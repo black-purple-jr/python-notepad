@@ -58,13 +58,27 @@ python -m venv .venv
 ./.venv/scripts/activate
 ```
 
-#### 4. Install the necessary package
+#### 4. Select the interpreter for python from your virtual environement
+
+##### Windows / Linux
+
+Ctrl + Shift + p
+
+##### MacOS
+
+Cmd + Shift + p
+
+and type Python: select interpreter
+
+select the one prefixed with .venv
+
+#### 5. Install the necessary package
 
 ```bash
 pip install PySide6
 ```
 
-#### 5. Run the main file
+#### 6. Run the main file
 
 ```bash
 python main.py
