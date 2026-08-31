@@ -1,33 +1,67 @@
-# python-notepad
+# Notepad App
 
-- Programing language : ![Static Badge](https://img.shields.io/badge/Python-blue?logo=Python&logoColor=%233776AB&labelColor=%231F1F1F&color=%233776AB)
-- Package manager : ![Static Badge](https://img.shields.io/badge/Pip%2026.1.2-green?logo=Pip&logoColor=%23F16436&color=%23F16436)
-- Main Package : ![Static Badge](https://img.shields.io/badge/PySide6-green?logoColor=%23ABE659&color=%23ABE659)
+## Overview
 
-<hr>
+This is a simple GUI (Graphical User Interface) made with Python and PySide6 that is identical to Windows 10 Notepad. I published a version in the releases section. [Here is the download link](https://github.com/black-purple-jr/python-notepad/releases/download/v1.0.0/Notepad.exe), It may be heavy, maybe I could remake it later with C++ and Qt, but I'm not doing it for the moment, because I don't know neither C++ or using Qt.
 
-### To create your own virtual environement:
+## Features
+
+* Saving a new file to your local machine.
+* Opening an existing file in the editor.
+* Saving a file.
+* Opening a new window while keeping your first window.
+* Toggling word wrap.
+* Toggling the status bar.
+* Adjusting the screen size.
+* Switching fonts.
+* Keyboard shortcuts.
+
+## Technology Used
+
+* Python 3.14.3
+
+## Packages
+
+* `PySide6`: PySide6 is the official Python module from the [Qt for Python project](https://wiki.qt.io/Qt_for_Python), which provides access to the complete Qt 6.0+ framework.
+
+## Quick Start
+
+### Prerequisites
+
+* Git
+
+### Installation
+
+#### 1. Clone the repo locally
 
 ```bash
-python -m venv .venv
+git clone https://github.com/black-purple-jr/python-notepad
 ```
-<hr>
 
-### To activate that virtual environement:
+#### 2. Activate the virtual environement
 
-on Windows
+##### Linux / MacOS
+
+```bash
+./.venv/bin/activate
+```
+
+##### Windows
+
 ```bash
 ./.venv/scripts/activate
 ```
 
-on Linux / MacOS
-```bash
-./.venv/bin/activate
-```
-<hr>
-
-### Get the necessary package:
+#### 3. Run the main file
 
 ```bash
-pip install PySide6
+python main.py
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) for details.
+
+## Author
+
+* Abdellah DAKIR ALLAH - a.k.a [black-purple-jr](https://github.com/black-purple-jr) on Github and some other platforms.

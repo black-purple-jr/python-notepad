@@ -1,7 +1,7 @@
 import sys, os
 
 from PySide6.QtCore import Slot, QMimeData
-from PySide6.QtGui import QIcon, QAction, QFont, QTextDocument
+from PySide6.QtGui import QIcon, QAction, QFont
 from PySide6.QtPrintSupport import QPrinter, QPrintDialog
 from PySide6.QtWidgets import (
     QApplication,
@@ -135,12 +135,6 @@ class MainWindow(QMainWindow):
         self.delete_action.setEnabled(False)
         self.delete_action.triggered.connect(self.delete_text)
 
-        # find action
-        self.find_action = QAction(QIcon("icons/find.png"),"&Find...", self)
-        self.find_action.setShortcut("Ctrl+F")
-        self.find_action.setStatusTip("Find text")
-        self.find_action.triggered.connect(self.find)
-
         # select all action
         self.select_all_action = QAction("&Select all", self)
         self.select_all_action.setShortcut("Ctrl+A")
@@ -210,7 +204,6 @@ class MainWindow(QMainWindow):
         edit_menu.addAction(self.delete_action)
         edit_menu.addSeparator()
         edit_menu.addAction(self.select_all_action)
-        edit_menu.addAction(self.find_action)
         # edit_menu.addAction(self.find_next_action)
         # edit_menu.addAction(self.find_previous_action)
         edit_menu.addSeparator()
@@ -331,13 +324,6 @@ class MainWindow(QMainWindow):
         cursor = self.text_editor.textCursor()
         if cursor.hasSelection():
             cursor.removeSelectedText()
-
-    @Slot()
-    def find(self):
-        text, ok = QInputDialog.getText(self, "Find", "Find:", text=self.find_text)
-        if ok and text:
-            self.find_text = text
-            self.text_editor.find(text)
 
     @Slot()
     def selection_changed(self):
