@@ -17,7 +17,7 @@ This is a simple GUI (Graphical User Interface) made with Python and PySide6 tha
 
 ## Technology Used
 
-![Static Badge](https://img.shields.io/badge/Python-blue?logo=python&logoColor=%233776AB&labelColor=%231F1F1F&color=%233776AB)
+* Python
 
 ## Packages
 
@@ -46,13 +46,13 @@ python -m venv .venv
 
 #### 3. Activate the virtual environement you created
 
-##### Linux / MacOS
+##### * Linux / MacOS
 
 ```bash
 ./.venv/bin/activate
 ```
 
-##### Windows
+##### * Windows
 
 ```bash
 ./.venv/scripts/activate
@@ -60,11 +60,11 @@ python -m venv .venv
 
 #### 4. Select the interpreter for python from your virtual environement
 
-##### Windows / Linux
+##### * Windows / Linux
 
 Ctrl + Shift + p
 
-##### MacOS
+##### * MacOS
 
 Cmd + Shift + p
 
