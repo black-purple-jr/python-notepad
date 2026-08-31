@@ -2,13 +2,12 @@
 
 ## Overview
 
-This is a simple GUI (Graphical User Interface) made with Python and PySide6 that is identical to Windows 10 Notepad. I published a version in the releases section. [Here is the download link](https://github.com/black-purple-jr/python-notepad/releases/download/v1.0.0/Notepad.exe), It may be heavy, maybe I could remake it later with C++ and Qt, but I'm not doing it for the moment, because I don't know neither C++ or using Qt.
+This is a simple GUI (Graphical User Interface) made with Python and PySide6 that is identical to Windows 10 Notepad. I published a version in the releases section. [Here is the download link](https://github.com/black-purple-jr/python-notepad/releases/download/v1.0.0/Notepad.exe), It may be heavy, maybe I could remake it later with C++ and Qt, but I'm not doing it for the moment, because I don't know neither C++ or how to use Qt.
 
 ## Features
 
 * Saving a new file to your local machine.
 * Opening an existing file in the editor.
-* Saving a file.
 * Opening a new window while keeping your first window.
 * Toggling word wrap.
 * Toggling the status bar.
@@ -18,7 +17,7 @@ This is a simple GUI (Graphical User Interface) made with Python and PySide6 tha
 
 ## Technology Used
 
-* Python 3.14.3
+![Static Badge](https://img.shields.io/badge/Python-blue?logo=python&logoColor=%233776AB&labelColor=%231F1F1F&color=%233776AB)
 
 ## Packages
 
@@ -29,6 +28,7 @@ This is a simple GUI (Graphical User Interface) made with Python and PySide6 tha
 ### Prerequisites
 
 * Git
+* Python 3.14.3+
 
 ### Installation
 
@@ -38,7 +38,13 @@ This is a simple GUI (Graphical User Interface) made with Python and PySide6 tha
 git clone https://github.com/black-purple-jr/python-notepad
 ```
 
-#### 2. Activate the virtual environement
+#### 2. Create a virtual environement
+
+```bash
+python -m venv .venv
+```
+
+#### 3. Activate the virtual environement you created
 
 ##### Linux / MacOS
 
@@ -52,7 +58,13 @@ git clone https://github.com/black-purple-jr/python-notepad
 ./.venv/scripts/activate
 ```
 
-#### 3. Run the main file
+#### 4. Install the necessary package
+
+```bash
+pip install PySide6
+```
+
+#### 5. Run the main file
 
 ```bash
 python main.py
