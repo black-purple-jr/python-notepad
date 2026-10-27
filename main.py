@@ -39,7 +39,7 @@ class MainWindow(QMainWindow):
         self.default_font_size = self.text_editor.font().pointSize()
         self.text_editor.cursorPositionChanged.connect(self.cursor_position)
 
-        # defining some actions :
+        # defining some actions >>
 
         # new file action
         self.new_file_action = QAction(QIcon("icons/new.png"), "&New file", self)
@@ -233,6 +233,7 @@ class MainWindow(QMainWindow):
         status_bar.addPermanentWidget(separator_2)
         status_bar.addPermanentWidget(QLabel("UTF-8"))
 
+
     @Slot()
     def new_file(self):
         if self.text_editor.document().isModified():
@@ -318,6 +319,7 @@ class MainWindow(QMainWindow):
                 event.ignore()
                 return
         event.accept()
+
 
     @Slot()
     def delete_text(self):
