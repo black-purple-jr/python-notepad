@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a simple GUI (Graphical User Interface) made with Python and PySide6 that is identical to Windows 10 Notepad. I published a version in the releases section. [Here is the download link](https://github.com/black-purple-jr/python-notepad/releases/download/v1.0.0/Notepad.exe), It may be heavy, maybe I could remake it later with C++ and Qt, but I'm not doing it for the moment, because I don't know neither C++ or how to use Qt.
+This is a simple GUI (Graphical User Interface) made with Python and PySide6 that is identical to Windows 10 Notepad. I published a version in the releases section, It may be heavy, maybe I could remake it later with C++ and Qt, but I'm not doing it for the moment, because I don't know neither C++ or how to use Qt.
 
 ## Features
 
@@ -15,9 +15,15 @@ This is a simple GUI (Graphical User Interface) made with Python and PySide6 tha
 * Switching fonts.
 * Keyboard shortcuts.
 
+## Download
+
+* [For Windows](https://github.com/black-purple-jr/python-notepad/releases/download/v1.0.0/Notepad.exe)
+* [For MacOS](https://github.com/black-purple-jr/python-notepad/releases/download/v1.0.0/)
+
 ## Technology Used
 
 * Python
+* PySide
 
 ## Packages
 
@@ -49,7 +55,7 @@ python -m venv .venv
 ##### * Linux / MacOS
 
 ```bash
-./.venv/bin/activate
+.source .venv/bin/activate
 ```
 
 ##### * Windows
