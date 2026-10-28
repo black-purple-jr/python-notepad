@@ -18,7 +18,7 @@ This is a simple GUI (Graphical User Interface) made with Python and PySide6 tha
 ## Download
 
 * [For Windows](https://github.com/black-purple-jr/python-notepad/releases/download/v1.0.0/Notepad.exe)
-* [For MacOS](https://github.com/black-purple-jr/python-notepad/releases/download/v1.0.0/)
+* [For MacOS](https://github.com/black-purple-jr/python-notepad/releases/download/v1.0.0/Notepad.dmg)
 
 ## Technology Used
 
